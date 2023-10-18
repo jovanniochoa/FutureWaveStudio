@@ -9,6 +9,18 @@
     z-index: 1;
   }
   
+  /* Add a sticky class */
+  .navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000000; /* Change the background color when sticky */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow when sticky */
+    padding: 1rem 2rem; /* Adjust padding when sticky */
+    z-index: 5; /* Set a higher z-index for the sticky navbar */
+  }
+
   /* Navbar logo styles */
   .navbar-logo {
     display: flex;
