@@ -1,19 +1,23 @@
 import React from 'react';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar.js';
 import './App.css';
-import Applications from './Applications.js';
-import Support from './Support.js';
-import AppCards from './AppCards'; // Import your AppCards component
+import SupportPage from './SupportPage.js';
+import Home from './Home.js';
 
 
 const App = () => (
-  <div>
-    <Navbar />
-    <Applications />
-    <AppCards />
-    <Support />
-  </div>
+  
+    <div>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/support" element={<SupportPage />} />
+        </Routes>
+      </Router>
+    </div>
+
 );
 
 export default App;

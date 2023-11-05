@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Navbar.css';
 
 const Navbar = () => {
@@ -47,22 +48,23 @@ const Navbar = () => {
         <span></span>
       </div>
       <ul className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
-        <li><a href="#home">Home</a></li>
+        {/* Use Link components for navigation */}
+        <li><Link to="/home">Home</Link></li>
         <li
           className={`dropdown ${isAboutDropdownOpen ? 'open' : ''}`}
           onMouseEnter={toggleAboutDropdown}
           onMouseLeave={toggleAboutDropdown}
         >
-          <a href="#apps">Apps</a>
+          <Link to="/apps">Apps</Link>
           <div className="dropdown-menu">
             <ul>
-              <li><a href="#reaction">Reaction</a></li>
-              <li><a href="#rock_climbing">Rock Climbing</a></li>
+              <li><Link to="/reaction">Reaction</Link></li>
+              <li><Link to="/rock_climbing">Rock Climbing</Link></li>
             </ul>
           </div>
         </li>
-        <li><a href="#support">Support</a></li>
-        <li><a href="#about_us">About Us</a></li>
+        <li><Link to="/support">Support</Link></li>
+        <li><Link to="/about_us">About Us</Link></li>
       </ul>
     </nav>
   );
