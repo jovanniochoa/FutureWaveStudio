@@ -49,7 +49,7 @@ const Navbar = () => {
       </div>
       <ul className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
         {/* Use Link components for navigation */}
-        <li><Link to="/home">Home</Link></li>
+        <li><Link to="/"> Home</Link></li>
         <li
           className={`dropdown ${isAboutDropdownOpen ? 'open' : ''}`}
           onMouseEnter={toggleAboutDropdown}
