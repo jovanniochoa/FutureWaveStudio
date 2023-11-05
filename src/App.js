@@ -4,6 +4,7 @@ import Navbar from './Navbar.js';
 import './App.css';
 import SupportPage from './SupportPage.js';
 import Home from './Home.js';
+import Footer from './Footer.js';
 
 
 const App = () => (
@@ -16,6 +17,7 @@ const App = () => (
           <Route path="/support" element={<SupportPage />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
 
 );

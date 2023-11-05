@@ -1,0 +1,85 @@
+/* Footer Container */
+.footer {
+    background-color: black; /* Change background color to black */
+    padding: 20px 0;
+    color: white; /* Set text color to white */
+  }
+  
+  /* Top Divider Line */
+  .footer-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-left: 50px; /* Adjust the left margin as needed */
+    margin-right: 50px; /* Adjust the right margin as needed */
+  }
+  
+  /* Social Icons */
+  .footer-social-icons a {
+    margin-right: 20px; /* Increase margin for larger icons */
+    font-size: 28px; /* Increase font size for larger icons */
+    color: white; /* Set icon color to white */
+    text-decoration: none;
+  }
+  
+  /* App Buttons */
+  .footer-app-buttons button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Links Section */
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-top: 1px solid #635959;
+    margin-left: 50px; /* Adjust the left margin as needed */
+    margin-right: 50px; /* Adjust the right margin as needed */
+  }
+  
+  /* Left Side Links */
+  .footer-links-left a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links-left a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Company Logo */
+  .footer-company-logo img {
+    height: 200px;
+    cursor: pointer;
+  }
+  
+  /* Bottom Divider Line */
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: black;
+  }
+  
+  .footer-bottom p {
+    color: white; /* Set text color to white */
+    font-size: 14px;
+  }
+  
+  .footer-bottom a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
