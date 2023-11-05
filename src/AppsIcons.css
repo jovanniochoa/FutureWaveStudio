@@ -1,0 +1,41 @@
+.apps-icons-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .apps-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .app img {
+    width: 1000px; /* Adjust the image size as needed */
+    height: 800px;
+    object-fit: cover;
+  }
+  
+  .app-details {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  /* Style as needed */
+  
