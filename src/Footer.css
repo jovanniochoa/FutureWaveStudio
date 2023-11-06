@@ -1,85 +1,121 @@
 /* Footer Container */
 .footer {
-    background-color: black; /* Change background color to black */
-    padding: 20px 0;
-    color: white; /* Set text color to white */
-  }
+  background-color: black;
+  padding: 20px 0;
+  color: white;
+  text-align: center; /* Center-align text */
+}
+
+/* Top Divider Line */
+.footer-divider {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to the next line on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-left: 20px; /* Adjust the left margin for smaller screens */
+  margin-right: 20px; /* Adjust the right margin for smaller screens */
+}
+
+/* Social Icons */
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Add space between icons and buttons on smaller screens */
+}
+
+.footer-social-icons a {
+  margin-right: 20px; /* Increase margin for larger icons */
+  font-size: 24px; /* Reduce font size for smaller screens */
+  color: white; /* Set icon color to white */
+  text-decoration: none;
+}
+
+/* App Buttons */
+.footer-app-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically on smaller screens */
+  align-items: center;
+  margin-top: 10px; /* Add space between icons and buttons on smaller screens */
+}
+
+.footer-app-buttons button {
+  margin: 10px 0; /* Add space between buttons */
+}
+
+/* Links Section */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to the next line on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  border-top: 1px solid #635959;
+  margin-left: 20px; /* Adjust the left margin for smaller screens */
+  margin-right: 20px; /* Adjust the right margin for smaller screens */
+}
+
+/* Left Side Links */
+.footer-links-left {
+  flex: 1; /* Occupy available space equally */
+}
+
+.footer-links-left a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-links-left a:hover {
+  text-decoration: underline;
+}
+
+/* Company Logo */
+.footer-company-logo {
+  flex: 1; /* Occupy available space equally */
+  text-align: center;
+  margin-top: 10px; /* Add margin to separate from links */
+}
+
+.footer-company-logo img {
+  max-width: 30%; /* Ensure the image does not exceed its container width */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer;
+  border: 0px solid white; /* Add a border to contain the image within the border */
+  border-radius: 5px;
+}
+
+/* Bottom Divider Line */
+.footer-bottom p {
+  font-size: 12px; /* Reduce font size for smaller screens */
+}
+
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .footer-divider {
+      flex-direction: column;
+      align-items: center;
+    }
   
-  /* Top Divider Line */
-  .footer-divider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    margin-left: 50px; /* Adjust the left margin as needed */
-    margin-right: 50px; /* Adjust the right margin as needed */
-  }
+    .footer-social-icons {
+      flex-direction: row; /* Center the icons horizontally */
+      justify-content: center; /* Center the icons horizontally */
+    }
   
-  /* Social Icons */
-  .footer-social-icons a {
-    margin-right: 20px; /* Increase margin for larger icons */
-    font-size: 28px; /* Increase font size for larger icons */
-    color: white; /* Set icon color to white */
-    text-decoration: none;
-  }
-  
-  /* App Buttons */
-  .footer-app-buttons button {
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-right: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Links Section */
+    .footer-app-buttons {
+      align-items: center; /* Center the buttons horizontally */
+    }
+    
   .footer-links {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 20px;
-    border-top: 1px solid #635959;
-    margin-left: 50px; /* Adjust the left margin as needed */
-    margin-right: 50px; /* Adjust the right margin as needed */
+    flex-direction: column;
   }
-  
-  /* Left Side Links */
-  .footer-links-left a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 10px;
+
+  .footer-links-left {
+    flex: none; /* Remove flex to let the links stack in a column */
   }
-  
-  .footer-links-left a:hover {
-    text-decoration: underline;
+
+  .footer-company-logo {
+    margin-top: 10px; /* Add margin to separate from links */
   }
-  
-  /* Company Logo */
-  .footer-company-logo img {
-    height: 200px;
-    cursor: pointer;
-  }
-  
-  /* Bottom Divider Line */
-  .footer-bottom {
-    text-align: center;
-    padding: 10px 0;
-    background-color: black;
-  }
-  
-  .footer-bottom p {
-    color: white; /* Set text color to white */
-    font-size: 14px;
-  }
-  
-  .footer-bottom a {
-    color: #0073e6;
-    text-decoration: none;
-  }
-  
-  .footer-bottom a:hover {
-    text-decoration: underline;
-  }
-  
+}
