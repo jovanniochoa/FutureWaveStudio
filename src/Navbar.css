@@ -1,178 +1,195 @@
 /* Navbar container with padding on left and right */
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #000000;
-    padding: 1rem 2rem;
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* Add a sticky class */
-  .navbar.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #000000; /* Change the background color when sticky */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow when sticky */
-    padding: 1rem 2rem; /* Adjust padding when sticky */
-    z-index: 5; /* Set a higher z-index for the sticky navbar */
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #000000;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1;
+}
 
-  /* Navbar logo styles */
+/* Add a sticky class */
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  z-index: 5;
+}
+
+/* Navbar logo styles */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.navbar-logo h1 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  line-height: 60px;
+}
+
+/* Navbar links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  z-index: 2;
+}
+
+.navbar-links li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #ffca28;
+}
+
+/* Navbar toggle button (for mobile) */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.icon-bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.navbar-toggle.open .icon-bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.navbar-toggle.open .icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.open .icon-bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Active state for small screens */
+.navbar-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background: #333;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+.navbar-links.active li {
+  margin: 10px;
+}
+
+.navbar-links.active a {
+  color: #fff;
+}
+
+/* Dropdown menu styles */
+.navbar-links .dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: auto;
+  background: #333;
+  padding: 10px;
+  z-index: 4;
+  border-top: 2px solid #ffca28;
+}
+
+.navbar-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style the links within the dropdown menu */
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  margin: 10px 0;
+  position: relative;
+}
+
+.dropdown-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-menu ul li a:hover {
+  color: #ffca28;
+}
+
+/* Media queries for small screens */
+@media screen and (max-width: 768px) {
   .navbar-logo {
     display: flex;
     align-items: center;
   }
-  
+
   .navbar-logo img {
-    width: 60px;
-    margin-right: 10px;
+    width: 40px;
+    margin-right: 0;
   }
-  
+
   .navbar-logo h1 {
-    color: #fff;
-    font-size: 1.2rem;
-    margin-top: 10px;
-    line-height: 60px;
+    font-size: 1rem;
   }
-  
-  /* Navbar links */
+
   .navbar-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2; /* Set a z-index for the navbar links */
-  }
-  
-  .navbar-links li {
-    margin: 0 1rem;
-    position: relative; /* Add this */
-  }
-  
-  .navbar-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  .navbar-links a:hover {
-    color: #ffca28;
-  }
-  
-  /* Navbar toggle button (for mobile) */
-  .navbar-toggle {
     display: none;
-    cursor: pointer;
     flex-direction: column;
-  }
-  
-  .navbar-toggle span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
-    transition: 0.4s;
-  }
-  
-  .navbar-toggle.open span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  
-  .navbar-toggle.open span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .navbar-toggle.open span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-  
-  /* Active state for small screens */
-  .navbar-links.active {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     position: absolute;
     top: 70px;
     right: 0;
-    background: #333;
+    background: #000000;
     width: 100%;
+    z-index: 3;
     transition: 0.3s;
-    z-index: 3; /* Set a higher z-index for active navbar links */
   }
-  
-  .navbar-links.active li {
-    margin: 10px;
+
+  .navbar-links.active {
+    display: flex;
   }
-  
-  .navbar-links.active a {
-    color: #fff;
-  }
-  
-  /* Dropdown menu styles */
-  .navbar-links .dropdown {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: auto; /* Set width to auto */
-    background: #333; /* Set background color for dropdown menu */
-    padding: 10px;
-    z-index: 4; /* Set a higher z-index for the dropdown */
-    border-top: 2px solid #ffca28;
-  }
-  
-  .navbar-links .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  /* Style the links within the dropdown menu */
-  .dropdown-menu ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .dropdown-menu ul li {
+
+  .navbar-links li {
     margin: 10px 0;
-    position: relative; /* Add this */
   }
-  
-  .dropdown-menu ul li a {
-    color: #fff;
-    text-decoration: none;
+
+  .navbar-toggle {
+    display: flex;
   }
-  
-  .dropdown-menu ul li a:hover {
-    color: #ffca28;
-  }
-  
-  /* Media queries for small screens */
-  @media screen and (max-width: 768px) {
-    .navbar-logo {
-      text-align: center;
-    }
-  
-    .navbar-logo h1 {
-      font-size: 1.2rem;
-    }
-  
-    .navbar-links {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .navbar-links li {
-      margin: 10px 0;
-      position: relative; /* Add this */
-    }
-  }
-  
+}

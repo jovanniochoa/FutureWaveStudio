@@ -1,0 +1,84 @@
+/* Styling for the About Us section */
+.about-section {
+    background-color: #f5f5f5;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Make it a relative container */
+}
+
+.about-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin: 0; /* Remove default margin */
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: left;
+    padding: 0 600px;
+}
+
+/* Styling for the culture links */
+.culture-links {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.culture-links h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.culture-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.culture-links li {
+    margin: 5px 0;
+}
+
+.culture-links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.about-section .culture-links + p {
+    margin: 20px 0;
+    text-align: left;
+}
+
+/* Update your CSS to apply padding to the common container */
+.about-section {
+    background-color: #f5f5f5;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Make it a relative container */
+}
+
+/* Rest of your existing styles... */
+
+/* Responsive design - adjust as needed */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px;
+    }
+    .about-section h2 {
+        font-size: 24px;
+    }
+    .about-section p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}

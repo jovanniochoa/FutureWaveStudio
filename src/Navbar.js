@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const toggleAboutDropdown = () => {
-    setIsAboutDropdownOpen(!isAboutDropdownOpen);
   };
 
   // Add a scroll event listener to set the sticky state
@@ -43,24 +38,21 @@ const Navbar = () => {
         className={`navbar-toggle ${isMobileMenuOpen ? 'open' : ''}`}
         onClick={toggleMobileMenu}
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <div className="icon-bar"></div>
+        <div className="icon-bar"></div>
+        <div className="icon-bar"></div>
       </div>
       <ul className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
-        {/* Use Link components for navigation */}
-        <li><Link to="/"> Home</Link></li>
-        <li
-          className={`dropdown ${isAboutDropdownOpen ? 'open' : ''}`}
-          onMouseEnter={toggleAboutDropdown}
-          onMouseLeave={toggleAboutDropdown}
-        >
-          <Link to="/apps">Apps</Link>
-          <div className="dropdown-menu">
-            <ul>
-              <li><Link to="/reaction">Reaction</Link></li>
-              <li><Link to="/rock_climbing">Rock Climbing</Link></li>
-            </ul>
+        <li><Link to="/">Home</Link></li>
+        <li>
+          <div className="dropdown">
+            <Link to="/apps">Apps</Link>
+            <div className="dropdown-menu">
+              <ul>
+                <li><Link to="/reaction">Reaction</Link></li>
+                <li><Link to="/rock_climbing">Rock Climbing</Link></li>
+              </ul>
+            </div>
           </div>
         </li>
         <li><Link to="/support">Support</Link></li>
