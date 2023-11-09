@@ -8,6 +8,10 @@ import SupportPage from './SupportPage.js';
 import AboutUsPage from './AboutUsPage.js';
 import Reaction from './ReactionPage.js';
 import Rock_climbing from './rock_climbingPage.js';
+import ParentGuide from './ParentGuide.js'
+import PrivacyPolicy from './PrivacyPolicy.js'
+import TermsOfService from './TermsOfService.js'
+import SFPP from './SFPP.js'
 import './App.css';
 
 const App = () => (
@@ -20,7 +24,12 @@ const App = () => (
           <Route path="/reaction" element={<Reaction />} />
           <Route path="/rock_climbing" element={<Rock_climbing />} />
         <Route path="/support" element={<SupportPage />} />
+        <Route path="/parent_guide" element={<ParentGuide />} />
+        <Route path="/privacy_policy" element={<PrivacyPolicy />} />
+        <Route path="/terms_of_service" element={<TermsOfService />} />
+        <Route path="/sfpp" element={<SFPP />} />
         <Route path="/about_us" element={<AboutUsPage />} />
+
       </Routes>
     </Router>
     <Footer />

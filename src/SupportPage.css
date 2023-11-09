@@ -1,0 +1,52 @@
+.support-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-wrap: wrap; 
+  }
+  
+  .modern-box:nth-child(1) {
+    background-color: #8B4513; /* Saddle Brown */
+  }
+  
+  .modern-box:nth-child(2) {
+    background-color: #CD853F; /* Peru */
+  }
+  
+  .modern-box:nth-child(3) {
+    background-color: #A0522D; /* Sienna */
+  }
+  
+  .modern-box:nth-child(4) {
+    background-color: #D2B48C; /* Tan */
+  }
+  
+  .modern-box {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 250;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+  }
+  
+  /* Use a media query to stack boxes vertically on smaller screens */
+  @media (max-width: 768px) {
+    .modern-box {
+      width: 80%; 
+      margin: 10px auto; 
+    }
+  }
+  
+  .modern-box:hover {
+    transform: scale(1.1);
+  }
+  
