@@ -36,23 +36,41 @@
   display: flex;
   flex-direction: column; /* Stack buttons vertically on smaller screens */
   align-items: center;
-  margin-top: 10px; /* Add space between icons and buttons on smaller screens */
+  margin-top: 20px; /* Add more space between icons and buttons on smaller screens */
 }
 
-.footer-app-buttons button {
-  margin: 10px 0; /* Add space between buttons */
+.footer-app-buttons button, .footer-app-buttons img {
+  margin: 1px 0; /* Add space between buttons */
+  padding: 0px 0px; /* Increase button padding for a more spacious feel */
+  border: none; /* Remove the button border */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: #000; /* Set a black background color */
+  color: #fff; /* Set text color to white for contrast */
+  font-size: 16px; /* Increase font size for better readability */
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  transition: transform 0.2s; /* Add smooth transition effect for scaling */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.footer-app-buttons button:hover, .footer-app-buttons img:hover {
+  transform: scale(1.05); /* Add a slight scaling effect on hover for a modern touch */
+}
+
+
+
 
 /* Links Section */
 .footer-links {
   display: flex;
-  flex-wrap: wrap; /* Wrap items to the next line on smaller screens */
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
   border-top: 1px solid #635959;
-  margin-left: 10%; /* Adjust the left margin for smaller screens */
-  margin-right: 10%; /* Adjust the right margin for smaller screens */
+  margin-left: 10%; 
+  margin-right: 10%; 
 }
 
 /* Left Side Links */

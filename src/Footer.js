@@ -27,16 +27,25 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-app-buttons">
-          <button>Download on the App Store</button>
-          <button>Get It On Google Play</button>
+
+          <a href="https://itunes.apple.com" target="_blank">
+            <button>
+              <img src="appstore.png" alt="App Store" width="200" />
+            </button>
+          </a>
+          <a href="https://play.google.com" target="_blank">
+            <button>
+              <img src="google.png" alt="App Store" width="200" />
+            </button>
+          </a>
         </div>
       </div>
       <div className="footer-links">
         <div className="footer-links-left">
-          <a href="/terms">Terms of Service</a>
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/parents-guide">Parent's Guide</a>
-          <a href="/safe-play">Safe and Fair Play Policy</a>
+          <a href="/terms_of_service">Terms of Service</a>
+          <a href="/privacy_policy">Privacy Policy</a>
+          <a href="/parent_guide">Parent's Guide</a>
+          <a href="/sfpp">Safe and Fair Play Policy</a>
           <a href="/legal-docs">Other Legal Docs</a>
           <a href="/media">For Media</a>
           <a href="/cookies">Manage Cookies</a>
