@@ -10,7 +10,7 @@ const AppCards = () => {
     <div className="app-cards">
       <div className={`card ${isHovered1 ? 'hovered' : ''}`} onMouseEnter={() => setHovered1(true)} onMouseLeave={() => setHovered1(false)}>
         <img
-          src={isHovered1 ? './frame.png' : './ClimbingAppLogo.png'}
+          src={isHovered1 ? './rockqr.png' : './ClimbingAppLogo.png'}
           alt="Climbing App Logo"
           className="card-img"
         />
