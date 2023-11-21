@@ -6,28 +6,47 @@
 }
 
 .card {
-  width: 400px; /* Adjust the width as needed */
+  position: relative;
+  width: 400px; /* Adjust the initial width as needed */
+  height: auto;
   padding: 20px;
   margin: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
-  background-color: #f9f9f9; /* Background color for the card */
-  display: flex; /* Use flex display to center content */
-  flex-direction: column; /* Arrange children in a column */
+  background-color: #f9f9f9;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .card img {
-  max-width: 100%; /* Ensure the image doesn't exceed the card width */
-  height: auto;
+  width: 100%; /* Set the width to 100% to fill the container */
+  height: 400px; /* Set a fixed height for the images (adjust as needed) */
+  object-fit: cover; /* Ensure the image covers the specified dimensions */
+  object-position: center top; /* Adjust the object-position to show the top part */
+  transition: opacity 0.3s ease;
 }
 
-.card h2 {
-  margin: 10px 0;
-  font-size: 1.5rem; /* Adjust the font size */
-  color: #333; /* Title color */
+.card:hover {
+  transform: scale(1.05);
 }
 
-.card p {
-  color: #777; /* Description color */
+.card:hover img {
+  opacity: 1;
+  height: 400px; /* Set a fixed height for the image after hover */
+  object-fit: cover; /* Ensure the image covers the specified dimensions */
+  object-position: center top; /* Adjust the object-position to show the top part */
+  transform: translateY(10px); /* Adjust the translateY value to bring down the image */
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-content {
+  opacity: 0;
 }
