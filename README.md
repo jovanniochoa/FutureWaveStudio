@@ -6,6 +6,10 @@ This repository contains the code for a webpage that showcases the various apps 
 
 The webpage displays a collection of our company's apps, providing users with information about each app and direct links to download them from the app store.
 
+## Website
+
+You can view the website at [FutureWaveStudio.com](https://FutureWaveStudio.com).
+
 ## How to Run
 
 To run this code locally, follow these steps:
@@ -25,7 +29,7 @@ Sometimes, it might be necessary to delete the `package.json` file to ensure tha
 Use the following command to run the application:
 
     ```bash
-    npm run android
+    npm start
     ```
 
 This will build the project and launch the app on the emulator.
@@ -48,6 +52,10 @@ Make your desired changes to the codebase.
 
 4. **Create a Pull Request:**
 Once you've made your changes, create a pull request explaining the proposed changes.
+
+## Contributing to Individual Apps
+Our company's apps are open-sourced! You can contribute to these apps directly via their respective repositories. Feel free to explore the repository and contribute to its development.
+1. [**React Master**](https://github.com/jovanniochoa/reactionApp)
 
 ## Notes
 
