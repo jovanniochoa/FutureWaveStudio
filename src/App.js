@@ -7,7 +7,7 @@ import AppPage from './AppPage.js';
 import SupportPage from './SupportPage.js';
 import AboutUsPage from './AboutUsPage.js';
 import Reaction from './ReactionPage.js';
-import Rock_climbing from './rock_climbingPage.js';
+import RockClimbing from './rock_climbingPage.js';
 import ParentGuide from './ParentGuide.js'
 import PrivacyPolicy from './PrivacyPolicy.js'
 import TermsOfService from './TermsOfService.js'
@@ -22,7 +22,7 @@ const App = () => (
         <Route index element={<Home />} />
         <Route path="/apps" element={<AppPage />} />
           <Route path="/reaction" element={<Reaction />} />
-          <Route path="/rock_climbing" element={<Rock_climbing />} />
+          <Route path="/rock_climbing" element={<RockClimbing />} />
         <Route path="/support" element={<SupportPage />} />
         <Route path="/parent_guide" element={<ParentGuide />} />
         <Route path="/privacy_policy" element={<PrivacyPolicy />} />

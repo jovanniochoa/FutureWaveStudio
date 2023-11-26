@@ -1,0 +1,47 @@
+/* Updated CSS */
+
+.coming-soon-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .coming-soon-container h2 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .coming-soon-container p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .progress-bar {
+    width: 50%;
+    height: 20px;
+    background-color: #ddd;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #f76f6d;
+    border-radius: 10px;
+    width: 30%; /* Adjust this value to change the progress */
+  }
+  
+  .countdown {
+    font-size: 24px;
+    color: #777;
+  }
+  
+  /* Updated CSS with adjusted animation container size */
+
+.lottie-animation {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    margin: 20px auto; /* Adjust margins */
+  }
+  
