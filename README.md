@@ -19,20 +19,18 @@ To run this code locally, follow these steps:
    git clone https://github.com/jovanniochoa/FutureWaveStudio
    cd FutureWaveStudio
     ```
-2. **Setup Emulator:**
-Start up an emulator, preferably using Android Studio.
 
-3. **Install Dependencies:**
+2. **Install Dependencies:**
 Sometimes, it might be necessary to delete the `package.json` file to ensure that all dependencies are downloaded to your local environment.
 
-4. **Run the Application:**
+3. **Run the Application:**
 Use the following command to run the application:
 
     ```bash
     npm start
     ```
 
-This will build the project and launch the app on the emulator.
+This will build the project and launch the website on the the web.
 
 ## Contribution
 
