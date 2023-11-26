@@ -1,4 +1,4 @@
-# My Company's App Showcase
+# FutureWave Studio
 
 This repository contains the code for a webpage that showcases the various apps developed by our company. It also provides insights into the direction we are taking as a company.
 
