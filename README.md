@@ -14,7 +14,7 @@ To run this code locally, follow these steps:
    ```bash
    git clone https://github.com/jovanniochoa/FutureWaveStudio
    cd FutureWaveStudio
-```
+    ```
 2. **Setup Emulator:**
 Start up an emulator, preferably using Android Studio.
 
@@ -24,9 +24,9 @@ Sometimes, it might be necessary to delete the `package.json` file to ensure tha
 4. **Run the Application:**
 Use the following command to run the application:
 
-```bash
-npm run android
-```
+    ```bash
+    npm run android
+    ```
 
 This will build the project and launch the app on the emulator.
 
